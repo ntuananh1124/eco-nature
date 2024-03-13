@@ -1,0 +1,54 @@
+@import "../scss/var";
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+    max-width: 930px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+    max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+    max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: $green !important;
+}

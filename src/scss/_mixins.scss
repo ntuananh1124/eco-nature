@@ -1,0 +1,15 @@
+@mixin text-limit($line-height, $line-num) {
+    display: inline-block;
+    display: -webkit-box;
+    overflow: hidden;
+    line-height: $line-height;
+    height: calc($line-height * $line-num);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line-num;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
